@@ -1,0 +1,166 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML Elements */
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  clear: both;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+/* Material icons */
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.disabled {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* Design Classes */
+
+.page {
+  margin: 60px 15px 15px 15px;
+}
+
+/* The app bar and it's parts */
+
+.app-bar {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #FFC107;
+  color: black;
+  padding: 10px 10px 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.app-bar .title {
+  margin-left: 10px;  
+}
+
+.app-bar .more {
+  float: right;
+}
+
+/* An individual feed item */
+
+.item {
+  /* clear: both; */
+  overflow: auto;
+}
+
+/* The feed items information line */
+
+.info-line {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.icon {
+  background: rgba(0, 0, 0, 0.25);
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.user {
+  line-height: 20px;
+}
+
+.time {
+  float: right;
+  line-height: 20px;
+  margin-right: 2px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* The items player line */
+
+.player-line {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+
+.play-track {
+  width: calc(100% - 35px);
+  background: rgba(255, 255, 255, 0.25);
+  float: right;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+/* The items tool line */
+
+.tool-line {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.75);
+  float: right;
+  padding-bottom: 10px;
+}
+
+/* Responsive adjustments as we scale up */
+
+@media screen and (min-width: 500px) {
+  .item {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .page {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+/* Under 800px */
+@media screen and (min-width: 800px) {
+  .item {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .item {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .item {
+    float: left;
+    width: 20%;
+  }
+}
